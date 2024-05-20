@@ -115,6 +115,11 @@ gap: 15px;
     border-radius: 24px;
     transition: all 0.3s ease;
     background: transparent;
+    color: #ffffff;
+}
+
+.form-group input:hover {
+    border: 1px solid #ffffff;
 }
 
 .button-group {
