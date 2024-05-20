@@ -47,7 +47,7 @@ body {
 }
 
 main {
-    background: radial-gradient(transparent, black);
+    background: radial-gradient(#00000070, black);
     width: 100%;
     height: 100vh;
 }
@@ -129,7 +129,7 @@ gap: 15px;
     width: 100%;
 }
 
-#login-submit {
+#button-submit {
     width: 100%;
     height: auto;
     border: 1px solid #E7E3FC3B;
@@ -141,12 +141,12 @@ gap: 15px;
     cursor: pointer;
 }
 
-#login-submit:hover {
+#button-submit:hover {
     background: #181A1CD6;
     color: white;
 }
 
-#login-google {
+#button-google {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +162,7 @@ gap: 15px;
 }
 
 
-#login-google:hover {
+#button-google:hover {
     background: #E7E3FC3B;
 }
 
@@ -218,7 +218,7 @@ gap: 15px;
         margin-top: -18px;
     }
 
-    #login-submit, #login-google {
+    #button-submit, #button-google {
         padding: 8.09px 11.55px 8.09px 11.55px;
     }
 
@@ -227,7 +227,7 @@ gap: 15px;
         margin-bottom: 8px;
     }
 
-    #login-google .google-logo {
+    #button-google .google-logo {
         width: 10px;
         height: 10px;
     }
