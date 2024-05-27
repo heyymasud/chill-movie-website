@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     users.push({ username, password });
                     localStorage.setItem('users', JSON.stringify(users));
                     alert('Registrasi berhasil');
-                    window.location.href = 'index.html';
+                    window.location.href = 'login.html';
                 }
             } catch (error) {
                 alert(error.message);
