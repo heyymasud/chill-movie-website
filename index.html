@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/chill-icon.png" type="image/png">
     <title>Chill Movie</title>
     <link rel="stylesheet" href="content/css/styles.css">
     <script>
@@ -37,7 +38,8 @@
                         <p>v</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="#" class="dropdown-item">Profil saya</a>
+                        <a href="#" class="dropdown-item">&#9787; Profil saya</a>
+                        <a href="#" class="dropdown-item" id="logout">&#9733; Ubah Premium</a>
                         <a href="#" class="dropdown-item" id="logout">Keluar</a>
                     </div>
                 </div>
@@ -47,24 +49,31 @@
 
     <!-- bagian utama -->
     <main id="home-main">
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-description">
-                    <h1>Spider-Man: Across the Spider-Verse</h1>
-                    <p>Miles Morales hadir kembali dalam babak baru saga Spider-Verse. Usai berjumpa lagi dengan Gwen
-                        Stacy, Spider-Man si tetangga yang ramah asal Brooklyn ini terlontar melintasi Multiverse yang
-                        membawanya pada Spider Society, kelompok pahlawan manusia laba-laba yang bertugas melindungi
-                        kelangsungan Multiverse. Siapa pun bisa memakai topeng itu namun seorang pahlawan adalah ia yang
-                        tahu benar cara memakainya.</p>
-                </div>
-                <div class="hero-cta">
-                    <button class="font-normal hover" id="button-cta">Mulai</button>
-                    <a class="font-normal hover" href="#"><img src="assets/img/info-logo.png" alt="info">Selengkapnya</a>
-                    <p>18+</p>
-                    <a class="hover" id="volume-logo"><img src="assets/img/volume-logo.png">
-                    </a>
-                </div>
-        </section>
+        <header id="home-header">
+            <section id="hero">
+                <div class="hero-container">
+                    <div class="hero-description">
+                        <h1>Spider-Man: Across the Spider-Verse</h1>
+                        <p>Miles Morales hadir kembali dalam babak baru saga Spider-Verse. Usai berjumpa lagi dengan
+                            Gwen
+                            Stacy, Spider-Man si tetangga yang ramah asal Brooklyn ini terlontar melintasi Multiverse
+                            yang
+                            membawanya pada Spider Society, kelompok pahlawan manusia laba-laba yang bertugas melindungi
+                            kelangsungan Multiverse. Siapa pun bisa memakai topeng itu namun seorang pahlawan adalah ia
+                            yang
+                            tahu benar cara memakainya.</p>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="font-normal hover" id="button-cta">Mulai</button>
+                        <a class="font-normal hover" href="#"><img src="assets/img/info-logo.png"
+                                alt="info">Selengkapnya</a>
+                        <p>18+</p>
+                        <a class="hover" id="volume-logo"><img src="assets/img/volume-logo.png">
+                        </a>
+                    </div>
+            </section>
+        </header>
+
         <div id="movie-container">
             <section id="continue-watch" class="movie-section">
                 <h3 class="h3">Melanjutkan Tonton Film</h3>
@@ -98,9 +107,38 @@
                             <p>&#9733; 4.2/5</p>
                         </div>
                     </div>
-                    <img class="arrow1" src="assets/img/arrow.png" alt="Arrow">
-                    <img class="arrow2" src="assets/img/arrow2.png" alt="Arrow">
+                    <div class="movie-card">
+                        <img src="assets/img/continue-watch/movie5.png" alt="Movie 5">
+                        <div class="card-description">
+                            <p>Shazam! Fury of the Gods</p>
+                            <p>&#9733; 3.4/5</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/continue-watch/movie6.png" alt="Movie 6">
+                        <div class="card-description">
+                            <p>The Tomorrow War</p>
+                            <p>&#9733; 4.3/5</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <p class="new-episode">Episode Baru</p>
+                        <img src="assets/img/continue-watch/movie7.png" alt="Movie 7">
+                        <div class="card-description">
+                            <p>Baymax!</p>
+                            <p>&#9733; 3.8/5</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/continue-watch/movie8.png" alt="Movie 8">
+                        <div class="card-description">
+                            <p>Stuart Little</p>
+                            <p>&#9733; 4.3/5</p>
+                        </div>
+                    </div>
                 </div>
+                <img class="arrow1 carousel-prev" src="assets/img/arrow.png" alt="Arrow">
+                <img class="arrow2 carousel-next" src="assets/img/arrow2.png" alt="Arrow">
             </section>
             <section id="top-rating" class="movie-section">
                 <h3 class="h3">Top Rating Film dan Series Hari ini</h3>
@@ -120,9 +158,26 @@
                     <div class="movie-card">
                         <img src="assets/img/top-rating/movie5.png" alt="Movie 5">
                     </div>
-                    <img class="arrow1" src="assets/img/arrow.png" alt="Arrow">
-                    <img class="arrow2" src="assets/img/arrow2.png" alt="Arrow">
+                    <div class="movie-card">
+                        <p class="new-episode">Episode Baru</p>
+                        <img src="assets/img/top-rating/movie6.png" alt="Movie 6">
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/top-rating/movie7.png" alt="Movie 7">
+                    </div>
+                    <div class="movie-card">
+                        <p class="new-episode">Episode Baru</p>
+                        <img src="assets/img/top-rating/movie8.png" alt="Movie 8">
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/top-rating/movie9.png" alt="Movie 9">
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/top-rating/movie10.png" alt="Movie 10">
+                    </div>
                 </div>
+                <img class="arrow1 carousel-prev" src="assets/img/arrow.png" alt="Arrow">
+                <img class="arrow2 carousel-next" src="assets/img/arrow2.png" alt="Arrow">
             </section>
             <section id="trending" class="movie-section">
                 <h3 class="h3">Film Trending</h3>
@@ -147,8 +202,29 @@
                         <p class="top10">Top 10</p>
                         <img src="assets/img/trending/movie5.png" alt="Movie 5">
                     </div>
-                    <img class="arrow1" src="assets/img/arrow.png" alt="Arrow">
-                    <img class="arrow2" src="assets/img/arrow2.png" alt="Arrow">
+                    <div class="movie-card">
+                        <p class="top10">Top 10</p>
+                        <img src="assets/img/trending/movie6.png" alt="Movie 6">
+                    </div>
+                    <div class="movie-card">
+                        <p class="top10">Top 10</p>
+                        <img src="assets/img/trending/movie7.png" alt="Movie 7">
+                    </div>
+                    <div class="movie-card">
+                        <p class="top10">Top 10</p>
+                        <img src="assets/img/trending/movie8.png" alt="Movie 8">
+                    </div>
+                    <div class="movie-card">
+                        <p class="top10">Top 10</p>
+                        <img src="assets/img/trending/movie9.png" alt="Movie 9">
+                    </div>
+                    <div class="movie-card">
+                        <p class="top10">Top 10</p>
+                        <img src="assets/img/trending/movie10.png" alt="Movie 10">
+                    </div>
+                </div>
+                <img class="arrow1 carousel-prev" src="assets/img/arrow.png" alt="Arrow">
+                <img class="arrow2 carousel-next" src="assets/img/arrow2.png" alt="Arrow">
             </section>
             <section id="new-release" class="movie-section">
                 <h3 class="h3">Rilis Baru</h3>
@@ -169,13 +245,67 @@
                     <div class="movie-card">
                         <img src="assets/img/new-release/movie5.png" alt="Movie 5">
                     </div>
-                    <img class="arrow1" src="assets/img/arrow.png" alt="Arrow">
-                    <img class="arrow2" src="assets/img/arrow2.png" alt="Arrow">
+                    <div class="movie-card">
+                        <img src="assets/img/new-release/movie6.png" alt="Movie 6">
+                    </div>
+                    <div class="movie-card">
+                        <p class="new-episode">Episode Baru</p>
+                        <img src="assets/img/new-release/movie7.png" alt="Movie 7">
+                    </div>
+                    <div class="movie-card">
+                        <p class="new-episode">Episode Baru</p>
+                        <img src="assets/img/new-release/movie8.png" alt="Movie 8">
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/new-release/movie9.png" alt="Movie 9">
+                    </div>
+                    <div class="movie-card">
+                        <img src="assets/img/new-release/movie10.png" alt="Movie 10">
+                    </div>
+                </div>
+                <img class="arrow1 carousel-prev" src="assets/img/arrow.png" alt="Arrow">
+                <img class="arrow2 carousel-next" src="assets/img/arrow2.png" alt="Arrow">
             </section>
         </div>
 
     </main>
+    <footer>
+        <section class="copyright">
+            <img src="assets/img/logo.png" alt="Chill">
+            <p>&copy; 2023 Chill All Rights Reserved.</p>
+        </section>
+        <section class="genre">
+            <h5>Genre</h5>
+            <ul>
+                <li><a href="#">Aksi</a></li>
+                <li><a href="#">Anak-anak</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Britania</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                <li><a href="#">Kejahatan</a></li>
+                <li><a href="#">KDrama</a></li>
+                <li><a href="#">Komedi</a></li>
+                <li><a href="#">Petualangan</a></li>
+                <li><a href="#">Perang</a></li>
+                <li><a href="#">Romantis</a></li>
+                <li><a href="#">Sains & Alam</a></li>
+                <li><a href="#">Thriller</a></li>
+            </ul>
+        </section>
+        <section class="help">
+            <h5>Bantuan</h5>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+                <li><a href="#">Privasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+            </ul>
+        </section>
+    </footer>
     <script src=" content/js/script.js">
+    </script>
+    <script src=" content/js/homeScript.js">
     </script>
 </body>
 
