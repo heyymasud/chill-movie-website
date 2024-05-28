@@ -47,7 +47,7 @@ body.login-body, body.daftar-body {
 }
 
 
-main {
+.main-page {
     background: radial-gradient(#00000070, black);
     width: 100%;
     height: 100vh;
@@ -251,11 +251,11 @@ body.index-body {
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(180deg, #181A1C 0%,#181a1c59 80% , transparent 100%);
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     gap: 4rem;
     font-size: 1.1rem;
     width: 100%;
-    height: 95px;
+    height: 80px;
 }
 
 .navbar a {
@@ -343,4 +343,106 @@ a img {
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    height: 100%;
+    padding: 0 4rem;
+    gap: 2rem;
+    background: linear-gradient(180deg, transparent 0%, #181a1ce0 50%, #181a1c 95%, #181A1C 100%);
+}
+
+.hero-description {
+    text-align: left;
+}
+.hero-description p {
+    width: 60%;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.hero-cta button {
+    padding: 0.8rem 1.5rem;
+    background-color: #0F1E93;
+    color: #ffffff;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.hero-cta a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+    background-color: #22282A;
+    border-radius: 45px;
+}
+.hero-cta p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.8rem;
+    border-radius: 45px;
+    border: 1px solid #ffffff;
+}
+.hero-cta img {
+    height: 20px;
+}
+#volume-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    right: 5rem;
+    background-color: transparent;
+}
+#volume-logo img {
+    height: 18px;
+}
+
+#movie-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 43rem;
+    padding: 0 4rem;
+}
+
+#continue-watch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.movie-list img {
+    height: 12vw;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -3rem;
+    padding: 0 1rem;
 }
