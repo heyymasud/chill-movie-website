@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevButtons = document.querySelectorAll('.carousel-prev');
     const nextButtons = document.querySelectorAll('.carousel-next');
 
+    const loggedIn = localStorage.getItem('loggedIn');
+    const logoutButton = document.getElementById('logout');
+
     function updateCarousel(carousel, currentIndex) {
-        carousel.style.transform = `translateX(-${currentIndex * 26}%)`; 
+        carousel.style.transform = `translateX(-${currentIndex * 26}%)`;
     }
 
     function initializeCarousel(carousel, prevButton, nextButton) {
@@ -18,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         nextButton.addEventListener('click', function () {
-            if (currentIndex < 4) { 
+            if (currentIndex < 4) {
                 currentIndex++;
                 updateCarousel(carousel, currentIndex);
             }
@@ -27,7 +30,30 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCarousel(carousel, currentIndex);
     }
 
-    carousels.forEach((carousel, index) => {
-        initializeCarousel(carousel, prevButtons[index], nextButtons[index]);
-    });
+    function logout() {
+        if (localStorage.getItem('loggedIn')) {
+            localStorage.removeItem('loggedIn');
+            alert('Anda telah keluar');
+            window.location.href = 'login.html';
+        } else {
+            alert('Anda belum login');
+        }
+    }
+
+    if (loggedIn !== 'true') {
+        window.location.href = 'login.html';
+    }
+    
+    if (logoutButton) {
+        logoutButton.addEventListener('click', logout);
+    }
+
+    if (carousels) {
+        carousels.forEach((carousel, index) => {
+            initializeCarousel(carousel, prevButtons[index], nextButtons[index]);
+        });
+    }
+
+
+    
 });
