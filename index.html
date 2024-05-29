@@ -7,25 +7,11 @@
     <link rel="icon" href="assets/img/chill-icon.png" type="image/png">
     <title>Chill Movie</title>
     <link rel="stylesheet" href="content/css/styles.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            if (localStorage.getItem('loggedIn') !== 'true') {
-                window.location.href = 'login.html';
-            }
-
-            const logoutButton = document.getElementById('logout');
-            logoutButton.addEventListener('click', function () {
-                localStorage.removeItem('loggedIn');
-                alert('Anda telah keluar');
-                window.location.href = 'login.html';
-            });
-        });
-    </script>
 </head>
 
 <body class="index-body">
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="nav-bar">
             <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
             <div class="nav-group">
                 <ul class="navbar-nav">
@@ -33,13 +19,13 @@
                     <li class="nav-item"><a class="nav-link" href="#">Film</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Daftar Saya</a></li>
                 </ul>
-                <div class="nav-item dropdown"><a class="nav-link" id="accountDropdown" href="#"><img
-                            src="assets/img/account.png" class="account-img" alt="Account">
+                <div class="nav-item dropdown"><a class="nav-link" id="accountDropdown" href="#">
+                        <img src="assets/img/account.png" class="account-img" alt="Account">
                         <p>v</p>
                     </a>
                     <div class="dropdown-content">
                         <a href="#" class="dropdown-item">&#9787; Profil saya</a>
-                        <a href="#" class="dropdown-item" id="logout">&#9733; Ubah Premium</a>
+                        <a href="#" class="dropdown-item">&#9733; Ubah Premium</a>
                         <a href="#" class="dropdown-item" id="logout">Keluar</a>
                     </div>
                 </div>
@@ -67,8 +53,8 @@
                         <button class="font-normal hover" id="button-cta">Mulai</button>
                         <a class="font-normal hover" href="#"><img src="assets/img/info-logo.png"
                                 alt="info">Selengkapnya</a>
-                        <p>18+</p>
-                        <a class="hover" id="volume-logo"><img src="assets/img/volume-logo.png">
+                        <p>13+</p>
+                        <a class="hover" id="volume-logo"><img src="assets/img/volume-logo.png" alt="logo volume">
                         </a>
                     </div>
             </section>
@@ -269,42 +255,50 @@
         </div>
 
     </main>
-    <footer>
+    <footer id="footer">
         <section class="copyright">
             <img src="assets/img/logo.png" alt="Chill">
             <p>&copy; 2023 Chill All Rights Reserved.</p>
         </section>
         <section class="genre">
-            <h5>Genre</h5>
-            <ul>
-                <li><a href="#">Aksi</a></li>
-                <li><a href="#">Anak-anak</a></li>
-                <li><a href="#">Anime</a></li>
-                <li><a href="#">Britania</a></li>
-                <li><a href="#">Drama</a></li>
-                <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
-                <li><a href="#">Kejahatan</a></li>
-                <li><a href="#">KDrama</a></li>
-                <li><a href="#">Komedi</a></li>
-                <li><a href="#">Petualangan</a></li>
-                <li><a href="#">Perang</a></li>
-                <li><a href="#">Romantis</a></li>
-                <li><a href="#">Sains & Alam</a></li>
-                <li><a href="#">Thriller</a></li>
-            </ul>
+            <header class="footer-title">
+                <h5>Genre</h5>
+                <h5 class="footer-dropdown">></h5>
+            </header>
+            <div class="footer-dropdown-content">
+                <ul>
+                    <li><a href="#">Aksi</a></li>
+                    <li><a href="#">Anak-anak</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Britania</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                    <li><a href="#">Kejahatan</a></li>
+                    <li><a href="#">KDrama</a></li>
+                    <li><a href="#">Komedi</a></li>
+                    <li><a href="#">Petualangan</a></li>
+                    <li><a href="#">Perang</a></li>
+                    <li><a href="#">Romantis</a></li>
+                    <li><a href="#">Sains & Alam</a></li>
+                    <li><a href="#">Thriller</a></li>
+                </ul>
+            </div>
         </section>
-        <section class="help">
-            <h5>Bantuan</h5>
+        <section class="help" id="bantuan">
+            <header class="footer-title">
+                <h5>Bantuan</h5>
+                <h5 class="footer-dropdown">></h5>
+            </header>
+            <div class="footer-dropdown-content">
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Kontak Kami</a></li>
                 <li><a href="#">Privasi</a></li>
                 <li><a href="#">Syarat & Ketentuan</a></li>
             </ul>
+        </div>
         </section>
     </footer>
-    <script src=" content/js/script.js">
-    </script>
     <script src=" content/js/homeScript.js">
     </script>
 </body>
